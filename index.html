@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>婚禮座位搜尋</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="image.jpg" alt="我們的結婚登記照片" class="wedding-photo">
+        <div class="search-section">
+            <h1>婚禮座位搜尋</h1>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="請輸入姓名、別稱或手機號碼">
+                <button id="searchBtn">搜尋桌號</button>
+            </div>
+        </div>
+        
+        <div class="result-section" id="resultSection" style="display: none;">
+            <div class="welcome-message">
+                <h2>歡迎您！</h2>
+                <p id="welcomeText"></p>
+            </div>
+            <div class="table-number">
+                <h3>桌號<span id="tableNumber"></span></h3>
+            </div>
+            <div class="guest-info">
+                <div class="info-item">
+                    <span class="label">姓名：</span>
+                    <span id="guestName"></span>
+                </div>
+                <div class="info-item">
+                    <span class="label">別稱：</span>
+                    <span id="nickname"></span>
+                </div>
+                <div class="info-item">
+                    <span class="label">關係方：</span>
+                    <span id="relationSide"></span>
+                </div>
+                <div class="info-item">
+                    <span class="label">關係：</span>
+                    <span id="relation"></span>
+                </div>
+                <div class="info-item">
+                    <span class="label">出席人數：</span>
+                    <span id="attendanceCount"></span>
+                </div>
+                <div class="info-item">
+                    <span class="label">素食人數：</span>
+                    <span id="vegetarianCount"></span>
+                </div>
+                <div class="info-item">
+                    <span class="label">兒童座椅餐具：</span>
+                    <span id="childSeatCount"></span>
+                </div>
+                <div class="info-item">
+                    <span class="label">備註：</span>
+                    <span id="notes"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="data.encrypted.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
